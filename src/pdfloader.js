@@ -10,8 +10,8 @@ module.exports = {
       const text = pdfData.text;
 
       const splitter = new RecursiveCharacterTextSplitter({
-        chunkSize: 500,
-        chunkOverlap: 50,
+        chunkSize: 1000,
+        chunkOverlap: 200,
       });
       const chunks = await splitter.splitText(text);
 
